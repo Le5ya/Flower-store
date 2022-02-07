@@ -8,26 +8,28 @@
 	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="styles/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="styles/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/
+	jquery.fancybox.min.css"/>
 	<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-3 mb-3 mb-md-0">
 					<a href="/">
 						<img src="images/лого.png" alt="logo" class="header-logo">
 					</a>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-4 mb-3 mb-md-0">
 					<span class="header-description">Интернет-магазин<br> 
                       цветов с доставкой<br>
                       по всей <span class="text-color-red">России</span></span>
 				</div>
-				<div class="col-md-3">
-					<a href="tel+78006548745" class="header-phone">8(800)654-87-45</a>
+				<div class="col-lg-3 col-md-5 header-contacts">
+					<a href="tel+78006548745" class="header-phone">8 (800) 654-87-45</a>
 					<span class="header-info">Звонок по России бесплатный</span>
-					<a href=""class="collback">Заказать звонок</a>
+					<a data-fancybox data-src="#modal" href="javascript:;" class="collback">Заказать звонок</a>
 				</div>
 			</div>
 			<!-- .row -->
@@ -36,8 +38,8 @@
 	</header>
 	<section class="hero">
 		<div class="container">
-			<h1 class="hero-title">Эксклюзивные цветы и букеты<br> flowers Shop</h1>
-			<p class="hero-description">первая в россии эксклюзивная доставка цветов<br>
+			<h1 class="hero-title">Эксклюзивные цветы и букеты flowers Shop</h1>
+			<p class="hero-description">первая в россии эксклюзивная доставка цветов
                                   для людей, которые ценят<b> уникальность<b></p>
                                   	<!-- Slider main container -->
 				<div class="swiper-container flowers-slider">
@@ -75,7 +77,10 @@
 				<div class="hero-cta">
 					Закажите эксклюзивный букет со скидкой 10%
 				</div>
-				<button class="button">Заказать букет</button>
+				<a data-fancybox data-src="#modal" href="javascript:;" class="collback">
+				<button class="button">Заказать букет</button>	
+				</a>
+				
 		</div>
 		<!-- conainer -->
 	</section>
@@ -87,7 +92,7 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide review-slide d-flex align-items-center">
+    <div class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center">
 			<div class="review-image d-flex align-items-center
 			 justify-content-center flex-column review-image-1">
 				<span class="review-name">Алиса Иванова</span>
@@ -97,12 +102,12 @@
  				<p class=review>
 					 Я очень довольна таким отношением к делу. Обслужили просто превосходно, я заказывала по телефону — так подробно мне всё объяснили, помогли выбрать замечательный букет, и привезли всё вовремя, букет был очень красивый, он очень понравился, спасибо вам огромное.
 				</p>
-				<a href="#" class="review-link">Посмотреть фотографии букета</a>
+				<a href="javascript:;" id="review-1" class="review-link">Посмотреть фотографии букета</a>
 			</div>
   
 		</div>
 		<!-- .slide -->
-    <div class="swiper-slide review-slide d-flex align-items-center">
+    <div class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center">
 			<div class="review-image d-flex align-items-center
 			 justify-content-center flex-column review-image-2">
 				<span class="review-name">Ивана Алисова</span>
@@ -117,7 +122,7 @@
   
 		</div>
 		<!-- .slide -->
-    <div class="swiper-slide review-slide d-flex align-items-center">
+    <div class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center">
 			<div class="review-image d-flex align-items-center
 			 justify-content-center flex-column review-image-3">
 				<span class="review-name">Алиса Иванова</span>
@@ -132,7 +137,7 @@
   
 		</div>
 		<!-- .slide -->
-    <div class="swiper-slide review-slide d-flex align-items-center">
+    <div class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center">
 			<div class="review-image d-flex align-items-center
 			 justify-content-center flex-column review-image-4">
 				<span class="review-name">Ивана Алисова</span>
@@ -147,7 +152,7 @@
   
 		</div>
 		<!-- .slide -->
-    <div class="swiper-slide review-slide d-flex align-items-center">
+    <div class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center">
 			<div class="review-image d-flex align-items-center
 			 justify-content-center flex-column review-image-5">
 				<span class="review-name">Алиса Иванова</span>
@@ -162,7 +167,7 @@
   
 		</div>
 		<!-- .slide -->
-    <div class="swiper-slide review-slide d-flex align-items-center">
+    <div class="swiper-slide review-slide d-flex flex-column flex-md-row align-items-center">
 			<div class="review-image d-flex align-items-center
 			 justify-content-center flex-column review-image-6">
 				<span class="review-name">Ивана Алисова</span>
@@ -192,13 +197,13 @@
 		<section class="advantages">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-md-4 mb-5 mb-md-0">
 					<div class="adv-wrapper">
 								<img src="images/adv-2.png" class="adv-img" alt="adv-1">
 					</div>
 					<h3 class="adv-title">Только прямые поставки цветов из&nbsp;Голландии</h3>
 				</div>
-				<div class="col">
+				<div class="col-md-4 mb-5 mb-md-0">
 					<div class="adv-wrapper">
 							<img src="images/adv-1.png" class="adv-img" alt="adv-2">
 					</div>
@@ -206,7 +211,7 @@
 						имеют 10&nbsp;-летний
 						стаж работы</h3>
 				</div>
-				<div class="col">
+				<div class="col-md-4 mb-5 mb-md-0">
 					<div class="adv-wrapper">
 							<img src="images/adv-3.png" class="adv-img" alt="adv-3">
 					</div>
@@ -226,7 +231,7 @@
 				Выберите желаемые цветы и наши флористы их оформят и доставят лично в руки!
 			</p>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -259,7 +264,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -292,7 +297,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -325,7 +330,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -358,7 +363,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -391,7 +396,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -424,7 +429,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -457,7 +462,7 @@
 						<button class="button card-button">в корзину</button>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<div class="card">
 						<img src="images/flowers/flower-1.png" alt="rose" class="card-img">
 						<h3 class="card-title">Розы</h3>
@@ -499,7 +504,7 @@
 	<!-- /.goods -->
 	<section class="offer">
 		<div class="container">
-			<h2 class="section-title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
+			<h2 class="section-title offer-title">ОСТАЛИСЬ ВОПРОСЫ?</h2>
 			<a href="" class="offer-link">ЗАКАЖИТЕ ЗВОНОК НАШЕГО флориста!</a>
 			<span class="offer-label">или позвоните по телефону</span>
 			<a href="+7(800}6548745" class="offer-phone">8 (800) 654-87-45</a>
@@ -510,7 +515,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row py-5">
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-6 mb-5 mb-md-0 left">
 					<nav>
 						<ul class="footer-menu d-flex">
 							<li class="footer-menu-item">
@@ -527,7 +532,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6 col-md-6 right">
 					<div class="footer-info">
 						<span class="footer-label">Отдел обслуживания клиентов</span>
 						<a href="+7(800}6548745" class="footer-phone">8 (800) 654-87-45</a>
@@ -545,17 +550,17 @@
 	<footer class="footer footer-white">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 					<a href="/">
 						<img src="images/logo-black.png" alt="logo" class="footer-logo">
 					</a>
 				</div>
-				<div class="col-md-6">
+				<div class="col-lg-6">
 					<span class="footer-description">Интернет-магазин<br> 
                       цветов с доставкой<br>
                       по всей <span class="text-color-red">России</span></span>
 				</div>
-				<div class="col-md-3">
+				<div class="col-lg-3 col-md-6">
 						<div class="author">
 						Разработка сайта: <a href="htpps:\\vk.com" class="author-link">Islamov Art
 						</a>
@@ -563,11 +568,19 @@
 				</div>
 			</div>
 			<!-- .row -->
-		</div>
-				
+		</div>		
 	</footer>
 	<!-- /.footer -->
+	<div class="modal" id="modal">
+		<h2 class="modal-title">Закажите обратный звонок</h2>
+		<form action="#">
+			<input class="modal-input" type="tel"placeholder="+7 (__) _-_-__">
+			<button class="button modal-button">Перезвоните мне</button>			
+		</form>
+	</div>
 	<script src='scripts/swiper-bundle.min.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src='scripts/main.js'></script>
 </body>
 <!--  -->
