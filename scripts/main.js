@@ -66,5 +66,32 @@ $("#review-1").on('click', function() {
     });
 
   });
+
+const goods = document.querySelector('.goods');
+
+const  counterGroups = goods.querySelectorAll('.counter-group');
+
+
+counterGroups.forEach((item) => {
+const  counterButtonMinus = item.querySelector('.counter-button--minus');
+const  counterButtonPlus = item.querySelector('.counter-button--plus');
+
+const  counterInput = item.querySelector('.counter-input');
+
+let num = Number(counterInput.value);
+
+counterButtonPlus.addEventListener('click', () => {
+	num = num += 1;
+	counterInput.value = String(num);
+
+})
+counterButtonMinus.addEventListener('click', () => {
+	num -= 1;
+	counterInput.value = String(num);
+
+
+		})
+})
+
 });
 
