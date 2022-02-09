@@ -398,9 +398,9 @@ header {
   margin-right: 5px;
   color: inherit;
 }
-/* .modal {
+.modal {
   display: none;
-} */
+}
 .modal-title {
   color: #292929;
 }
