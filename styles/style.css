@@ -232,6 +232,9 @@ header {
   font-size: 18px;
   text-align: center;
 }
+.other {
+  display: none;
+}
 .card {
   text-align: center;
   border: 3px solid #ffffff;
@@ -313,6 +316,7 @@ header {
   margin-top: 39px;
   text-align: center;
   padding: 10px;
+  cursor: pointer;
 }
 .more:after {
   display: inline-block;

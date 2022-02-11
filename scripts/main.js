@@ -68,9 +68,7 @@ $("#review-1").on('click', function() {
   });
 
 const goods = document.querySelector('.goods');
-
 const  counterGroups = goods.querySelectorAll('.counter-group');
-
 
 counterGroups.forEach((item) => {
 const  counterButtonMinus = item.querySelector('.counter-button--minus');
@@ -91,7 +89,9 @@ counterButtonMinus.addEventListener('click', () => {
 
 
 		})
-})
+});
+
+
 
 });
 
